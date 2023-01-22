@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+// This is the first screen of the app
 void main() {
   runApp(const MyApp());
 }
