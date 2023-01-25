@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bb_app_self/screens/screen-1.dart';
+import 'package:bb_app_self/practice/columns.dart';
 
 void main() {
   runApp(const MyApp());
