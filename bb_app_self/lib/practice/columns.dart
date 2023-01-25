@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -40,15 +39,28 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
 
       body: SafeArea(
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text("A", style: TextStyle(fontSize: 25),),
-            Text("B", style: TextStyle(fontSize: 25),),
-            Text("C", style: TextStyle(fontSize: 25),),
-            Text("D", style: TextStyle(fontSize: 25),),
-            Text("E", style: TextStyle(fontSize: 25),),
-         ],
+        child: Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text("A", style: TextStyle(fontSize: 25),),
+              Text("B", style: TextStyle(fontSize: 25),),
+              Text("C", style: TextStyle(fontSize: 25),),
+              Text("D", style: TextStyle(fontSize: 25),),
+              Text("E", style: TextStyle(fontSize: 25),),
+
+              Column(
+                children: [
+                  Text("1", style: TextStyle(fontSize: 25),),
+                  Text("2", style: TextStyle(fontSize: 25),),
+                  Text("3", style: TextStyle(fontSize: 25),),
+                  Text("4", style: TextStyle(fontSize: 25),),
+                  Text("5", style: TextStyle(fontSize: 25),),
+                ],
+              )
+           ],
+          ),
         )
         ),
     );
