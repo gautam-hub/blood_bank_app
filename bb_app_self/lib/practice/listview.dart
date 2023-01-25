@@ -31,37 +31,51 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+    var names = [
+      "Ram",
+      "Ramanujan",
+      "Mona",
+      "Rajesh",
+      "Raman",
+      "Ram",
+      "Ramanujan",
+      "Mona",
+      "Rajesh",
+      "Raman"
+    ];
+
     return Scaffold(
         appBar: AppBar(
           title: Text("AppBar"),
         ),
         body: Center(
-          child: ListView(
-            scrollDirection: Axis.horizontal,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text("One", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text("Two", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text("Three", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text("Four", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text("Five", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
-              ),
-            ],
-          ),
-        )
-        );
+            child: ListView.separated(
+          itemBuilder: ((context, index) {
+            return Text(
+              names[index],
+              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+            );
+          }),
+          itemCount: names.length,
+          separatorBuilder: (context, index) {
+            return Divider(
+              height: 100,
+              thickness: 4,
+            );
+          },
+        )));
   }
 }
+
+
+
+
+// child: ListView.builder(
+//           itemBuilder: ((context, index) {
+//             return Text(
+//               names[index], style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+//             );
+//           }),
+//           itemCount: names.length,
+//           itemExtent: 100,
+//         )
