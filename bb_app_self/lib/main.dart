@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bb_app_self/practice/inkwell.dart';
+import 'package:bb_app_self/practice/scrollview.dart';
 
 void main() {
   runApp(const MyApp());
