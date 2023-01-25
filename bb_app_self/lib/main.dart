@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bb_app_self/practice/scrollview.dart';
+import 'package:bb_app_self/practice/listview.dart';
 
 void main() {
   runApp(const MyApp());
