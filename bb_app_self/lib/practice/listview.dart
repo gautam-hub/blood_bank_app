@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
       "Mona",
       "Rajesh",
       "Raman"
-    ];
+    ]; // how to create a listview
 
     return Scaffold(
         appBar: AppBar(
