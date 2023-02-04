@@ -84,11 +84,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       Image.asset('assets/images/pst1.png'),
                       Row(
                         children: [
-                          Image.asset('assets/images/like.png'),
-                          Image.asset('assets/images/chat.png'),
-                          Image.asset('assets/images/send.png'),
+                          Image.asset('assets/images/like.png', height: 20,width: 20,),
+                          Image.asset('assets/images/chat.png', height: 20,width: 20,),
+                          Image.asset('assets/images/send.png', height: 20,width: 20,),
                           
-                          Image.asset('assets/images/save.png'),
+                          Image.asset('assets/images/save.png', height: 20,width: 20,),
                         ],
                       )
                     ],
