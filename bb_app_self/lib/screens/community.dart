@@ -40,11 +40,14 @@ class _MyHomePageState extends State<MyHomePage> {
               Row(// Top nav bar.
                   children: [
                     Image.asset('assets/images/vector.png'),
-                    Text('My Community',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 25,
-                    ),)
+                    Padding(
+                      padding: const EdgeInsets.only(left: 65),
+                      child: Text('My Community',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                      ),),
+                    )
                   ],
                 ),
               Column( //Post-1
