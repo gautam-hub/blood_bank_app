@@ -94,65 +94,91 @@ class _MyHomePageState extends State<MyHomePage> {
                         Row(
                           // Row-4
                           children: [
-                            Column(
-                              // column for followers
-                              children: [
-                                Text(
-                                  '54',
-                                  style: TextStyle(
-                                    fontSize: 25,
-                                    fontWeight: FontWeight.bold,
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(40, 20, 30, 10),
+                              child: Column(
+                                // column for followers
+                                children: [
+                                  Text(
+                                    '54',
+                                    style: TextStyle(
+                                      fontSize: 25,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
-                                ),
-                                Text(
-                                  'Followers',
-                                   style: TextStyle(
-                                   fontSize: 12,
-                                  ),
-                                )
-                              ],
+                                  Text(
+                                    'Followers',
+                                     style: TextStyle(
+                                     fontSize: 12,
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
-                            Column(
-                              // column for following
-                              children: [
-                                Text(
-                                  '32',
-                                  style: TextStyle(
-                                    fontSize: 25,
-                                    fontWeight: FontWeight.bold,
+                            Padding(
+                              padding: const EdgeInsets.only(top: 9),
+                              child: Column(
+                                // column for following
+                                children: [
+                                  Text(
+                                    '32',
+                                    style: TextStyle(
+                                      fontSize: 25,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
-                                ),
-                                Text(
-                                  'Followings',
-                                   style: TextStyle(
-                                   fontSize: 12,
-                                  ),
-                                )
-                              ],
+                                  Text(
+                                    'Followings',
+                                     style: TextStyle(
+                                     fontSize: 12,
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           ],
                         ),
                         Row(
                           // row-5 for beginner and time
                           children: [
-                            Image.asset('assets/images/smiley.png'),
-                            Text("Beginner"),
-                            Text('120hrs'),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(30, 5, 0, 0),
+                              child: Image.asset('assets/images/smiley.png'),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(10, 5, 5, 0),
+                              child: Text("Beginner",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 5 ),
+                              child: Text('120hrs',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold
+                              ),),
+                            ),
                           ],
                         ),
-                        Image.asset('assets/images/pbar.png',width: 180,)
+                        Container(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(30, 0, 0, 5),
+                            child: Image.asset('assets/images/pbar.png',width: 180,),
+                          ))
                       ],
                     ),
                     
                   ],
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                       // Row-6 for ranking and points.
                       children: [
                         Column(
                           // trophy image and ranking
                           children: [
-                            Row(mainAxisAlignment: MainAxisAlignment.end,
+                            Row(
                               //row for ranking and trophy image
                               children: [
                                 Image.asset('assets/images/Trophy.png', height: 30, width: 30,),
@@ -200,74 +226,85 @@ class _MyHomePageState extends State<MyHomePage> {
                         )
                       ],
                     ),
-                    Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      //row-8 for statistics
-                      children: [
-                        Text('Statistics',
-                        style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
-                        ),),
-                        Text('Show all',
-                        style: TextStyle(
-                          fontSize: 13,
-                          color: Colors.grey.shade700
-                        ),)
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 15, 0, 10),
+                      child: Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        //row-8 for statistics
+                        children: [
+                          Text('Statistics',
+                          style: TextStyle(
+                            fontSize: 25,
+                            fontWeight: FontWeight.bold,
+                          ),),
+                          Text('Show all',
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: Colors.grey.shade700
+                          ),)
+                        ],
+                      ),
                     ),
                     Container(
-                      height: 100,
-                      width: 260,
+                      height: 130,
+                      width: 300,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.white,
                       ),
                       child: Row(
                       children: [
-                        Column(
-                          children: [
-                            Text('Calories',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 13,
-                            ),),
-                            Text('1,605 kcal',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 25,
-                            ),),
-                            Text('Time',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 13,
-                            ),),
-                            Text('1:03:30',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 25,
-                            ),),
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 15, 0, 15),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Calories',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 13,
+                                
+                              ),),
+                              Text('1,605 kcal',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 25,
+                              ),),
+                              Text('Time',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 13,
+                              ),),
+                              Text('1:03:30',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 25,
+                              ),),
+                            ],
+                          ),
                         ),
-                        Image.asset('assets/images/graph.png', width: 140,)
+                        Image.asset('assets/images/graph.png',width: 160,)
                       ],
                      ),
                     ),
-                   Row( 
-                      //row-10 for trainings
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text('Trainings',
-                        style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
-                        ),),
-                        Text('Show all',
-                        style: TextStyle(
-                          fontSize: 13,
-                          color: Colors.grey.shade700
-                        ),)
-                      ],
-                    ),
+                   Padding(
+                     padding: const EdgeInsets.fromLTRB(0,15,0,10),
+                     child: Row( 
+                        //row-10 for trainings
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text('Trainings',
+                          style: TextStyle(
+                            fontSize: 25,
+                            fontWeight: FontWeight.bold,
+                          ),),
+                          Text('Show all',
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: Colors.grey.shade700
+                          ),)
+                        ],
+                      ),
+                   ),
                     SingleChildScrollView(
                       // scrollable menu for training types
                       scrollDirection: Axis.horizontal,

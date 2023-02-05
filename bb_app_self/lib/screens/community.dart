@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         fontWeight: FontWeight.bold,
                         fontSize: 25,
                       ),),
-                    )
+                    ),
                   ],
                 ),
               Column( //Post-1
