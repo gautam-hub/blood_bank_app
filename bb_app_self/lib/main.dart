@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bb_app_self/screens/community.dart';
+import 'package:bb_app_self/screens/screen1.dart';
 
 void main() {
   runApp(const MyApp());
